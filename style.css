@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+header {
+    background-color: #69b3dd;
+    padding: 1.5em 0;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header h1 {
+    color: whitesmoke;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.conteudo {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.cabecalho {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-mobile {
+    display: none;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#secoes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 30%;
+}
+
+nav a {
+    display: flex;
+    text-decoration: none;
+    color: whitesmoke;
+    align-items: end;
+}
+
+nav a span {
+    margin-right: 0.3em;
+}
+
+#sobre h1, #sabores h1, #conosco h1 {
+    color: #69b3dd;
+    padding: 1.5em 0;
+}
+
+.carrossel {
+    margin: 0 auto;
+    max-width: 1024px;
+    height: 30em;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+}
+
+.slider {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slider input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    height: 100%;
+    border: .5em solid #69b3dd5a;
+    position: relative;
+    text-align: center;
+    transition: 0.8s;
+}
+
+.exemplo1, .exemplo2, .exemplo3 {
+    width: 100%;
+    height: 100%;
+}
+
+.exemplo1 {
+    background-color: salmon;
+}
+
+.exemplo2 {
+    background-color: saddlebrown;
+}
+
+.exemplo3 {
+    background-color: sandybrown;
+}
+
+.nav-manual, .nav-auto {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 1024px;
+    margin-top: 27em;
+}
+
+.nav-manual .manual-btn, .nav-auto div {
+    border: 1px solid #69b3dd;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: #69b3dd;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1,
+#radio2:checked ~ .nav-auto .auto-btn2,
+#radio3:checked ~ .nav-auto .auto-btn3 {
+    background-color:#69b3dd;
+}
+
+#radio1:checked ~ .primeiro-slide {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro-slide {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro-slide {
+    margin-left: -50%;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5em;
+}
+
+.sobre-img {
+    height: 15em;
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #69b3dd;
+}
+
+.img-sobre {
+    width: 100%;
+    height: 27%;
+}
+
+.sobre-texto {
+    max-width: 45%;
+    text-align: right;
+}
+
+.sobre-texto h2 {
+    margin-bottom: 1em;
+}
+
+.sobre-texto p {
+    color: #69b3dd;
+    text-align: justify;
+}
+
+#sabores {
+    background-color: #69b3dd5a;
+    padding-bottom: 1.5em;
+}
+
+.opcoes-sabores {
+    display: flex;
+    justify-content: space-between;
+    height: 13em;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 25%;
+}
+
+.opcoes button {
+    cursor: pointer;
+    margin: .3em 0;
+    padding: 0.3em 0;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Permanent Marker', cursive;
+    background-color: #69b3dd;
+    color: whitesmoke;
+}
+
+.img-op {
+    width: 70%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.op1, .op2, .op3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    gap: .3em;
+}
+
+.figura1 {
+    width: 100%;
+    max-width: 20%;
+    height: 100%;
+    max-height: 85%;
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figura2 {
+    width: 100%;
+    max-width: 20%;
+    height: 100%;
+    max-height: 85%;
+    background-color: saddlebrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figura3 {
+    width: 100%;
+    max-width: 20%;
+    height: 100%;
+    max-height: 85%;
+    background-color: sandybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desligado {
+    display: none;
+}
+
+.form {
+    max-width: 45%;
+    margin-bottom: 1.5em;
+}
+
+.form form label, .form form input,
+.form form textarea {
+    width: 100%;
+}
+
+.form form label {
+    color: #69b3dd;
+}
+
+.form form input, .form form textarea {
+    margin: 0.5em 0;
+    padding: 0.3em;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    background-color: #69b3dd5a;
+}
+
+textarea {
+    resize: none;
+    height: 12em;
+}
+
+.form button {
+    width: 25%;
+    padding: 0.3em 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #69b3dd;
+    color: whitesmoke;
+    font-family: 'Permanent Marker', cursive;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #69b3dd5a;
+}
+
+@media screen and (min-width:981px) {
+    #secoes {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .conteudo {
+        max-width: 780px;
+        margin: 0 auto;
+    }
+    
+    .cabecalho {
+        flex-direction: column;
+        align-items: start;
+        row-gap: 0.8em;
+    }
+    
+    .menu-mobile {
+        display: flex;
+    }
+
+    #secoes {
+        display: none;
+        max-width: 50%;
+    }
+
+    .nav-manual, .nav-auto {
+        max-width: 100%;
+    }
+
+    .sobre-texto {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .conteudo {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 0.8em;
+        max-width: 400px;
+    }
+    
+    .menu-mobile {
+        display: flex;
+    }
+
+    #secoes {
+        display: none;
+        max-width: 80%;
+    }
+
+    .nav-manual, .nav-auto {
+        max-width: 100%;
+    }
+
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-texto {
+        max-width: 90%;
+        text-align: right;
+        margin-top: 1.5em;
+    }
+
+    .opcoes-sabores {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .opcoes {
+        flex-direction: row;
+        column-gap: 0.5em;
+        max-width: 90%;
+    }
+
+    .opcoes button {
+        width: 100%;
+    }
+
+    .img-op {
+        width: 100%;
+        max-width: 90%;
+    }
+    
+    .op1, .op2, .op3 {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        row-gap: 1.5em;
+    }
+
+    .figura1, .figura2, .figura3 {
+        width: 15em;
+        max-width: 100%;
+        height: 10em;
+    }
+
+    #conosco > .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        width: 100%;
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rethink+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Sorveteria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header onmouseenter="ligarSecoes()">
+        <div class="conteudo cabecalho">
+            <h1 style="font-family: 'Permanent Marker', cursive;">Sorveteria</h1>
+            <div class="menu-mobile">
+                <span class="material-symbols-rounded" id="menu">menu</span>
+            </div>
+            <nav id="secoes">
+                <a href="#sobre">
+                    <span class="material-symbols-rounded">storefront</span>
+                    Sobre
+                </a>
+                <a href="#sabores">
+                    <span class="material-symbols-rounded">icecream</span>
+                    Sabores</a>
+                <a href="#conosco">
+                    <span class="material-symbols-rounded">support_agent</span>
+                    Fale conosco</a>
+            </nav>
+        </div>
+    </header>
+    <section class="conteudo carrossel">
+        <div class="slider">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+            <div class="slide primeiro-slide">
+                <div class="exemplo1"></div>
+            </div>
+            <div class="slide">
+                <div class="exemplo2"></div>
+            </div>
+            <div class="slide">
+                <div class="exemplo3"></div>
+            </div>
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
+    <section id="sobre" class="conteudo">
+        <h1 style="display: flex; column-gap: .5em; align-items: baseline;">Sobre a<p style="font-family: 'Permanent Marker', cursive;">Sorveteria</p></h1>
+        <div class="sobre">
+            <div class="sobre-img">
+                <div class="img-sobre" style="background-color: salmon;"></div>
+                <div class="img-sobre" style="background-color: saddlebrown;"></div>
+                <div class="img-sobre" style="background-color: sandybrown;"></div>
+            </div>
+            <div class="sobre-texto">
+                <h2 style="display: flex; column-gap: .5em; align-items: baseline; justify-content: end;">Um sonho chamado <p style="font-family: 'Permanent Marker', cursive; color: #69b3dd;">Sorveteria</p></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quidem dolor, dolorum non eius labore repellendus repudiandae a nostrum aliquam praesentium dolorem!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quidem dolor, dolorum non eius labore repellendus repudiandae a nostrum aliquam praesentium dolorem!</p>
+            </div>
+        </div>
+    </section>
+    <section id="sabores">
+        <div class="conteudo">
+            <h1>Sabores</h1>
+            <div class="opcoes-sabores">
+                <div class="opcoes">
+                    <button type="button" id="btnOpcao1" onclick="telaOpcao1()">Opção 1</button>
+                    <button type="button" id="btnOpcao2" onclick="telaOpcao2()">Opção 2</button>
+                    <button type="button" id="btnOpcao3" onclick="telaOpcao3()">Opção 3</button>
+                </div>
+                <div class="img-op">
+                    <div class="op1">
+                        <div class="figura1"></div>
+                        <div class="figura1"></div>
+                        <div class="figura1"></div>
+                        <div class="figura1"></div>
+                    </div>
+                    <div class="op2 desligado">
+                        <div class="figura2"></div>
+                        <div class="figura2"></div>
+                        <div class="figura2"></div>
+                        <div class="figura2"></div>
+                    </div>
+                    <div class="op3 desligado">
+                        <div class="figura3"></div>
+                        <div class="figura3"></div>
+                        <div class="figura3"></div>
+                        <div class="figura3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="conosco">
+        <div class="conteudo">
+            <h1>Fale conosco</h1>
+            <div class="form">
+                <form>
+                    <label for="nome">Seu nome</label>
+                    <input type="text" id="nome">
+                    <label for="email">Seu e-mail</label>
+                    <input type="text" id="email">
+                    <label for="telefone">Seu telefone (opcional)</label>
+                    <input type="tel" id="telefone">
+                    <label for="msn">Sua mensagem</label>
+                    <textarea id="msn"></textarea>
+                </form>
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
